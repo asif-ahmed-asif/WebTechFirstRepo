@@ -9,7 +9,7 @@
 </head>
 <body>
 	<?php
-	$currentPass = "123456";
+	$currentPass = "admin@123";
 	$newPass = $reType = $currentPass1 = "";
 	$currentPassErr = $newPassErr = $reTypeErr = "";
 
