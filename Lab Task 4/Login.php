@@ -15,7 +15,7 @@
     if (empty($_POST["uname"])) {
     	$unameErr = "User Name is required";
     } else {
-	    $uname = $_POST["uname"];$_SESSION['uname']=$uname;
+	    $uname = $_POST["uname"];
 	    $count = strlen("$uname");
 	    if ((!preg_match("/^[a-zA-Z-_' ]*$/",$uname)) || $count < 2 ){
 	      $unameErr = "Only alpha numeric characters, period, dash, underscore allowed and contains at least two characters";
@@ -25,7 +25,7 @@
     if (empty($_POST["password"])) {
     	$passErr = "Password is required";
     }else {
-    	$password = $_POST["password"];$_SESSION['password']=$password;
+    	$password = $_POST["password"];
     	$count = strlen("$password");
     	if ((!preg_match("([@#$%])",$password)) || $count < 8 ) {
     		$passErr = "Password must not be less than eight characters and  must contain at least one of the special characters (@, #, $, %) ";
