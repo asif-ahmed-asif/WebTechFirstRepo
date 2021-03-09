@@ -1,8 +1,4 @@
 <?php
-    $uname="admin";
-    $password="admin@123";
-
-    session_start();
 ?>
 <table width="80%" align="center" cellspacing="0" cellpadding="10" border="1">
     <tr>

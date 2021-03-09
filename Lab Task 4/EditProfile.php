@@ -1,11 +1,23 @@
+<?php
+	session_start();
+	if (isset($_SESSION['uname'])) 
+	{
+
+		include "LoginHeader.php";
+		include "Sidebar.php";
+	}
+	else
+	{
+		echo "<script>alert(Username or Password incorrect!)</script>";
+		echo "<script>location.href='Login.php'</script>";
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 </head>
 <body>
-
-<?php include "loginHeader.php";?>
-<?php include "Sidebar.php";?>
 <fieldset>
     <legend><b>EDIT PROFILE</b></legend>
 	<form method="" action="">

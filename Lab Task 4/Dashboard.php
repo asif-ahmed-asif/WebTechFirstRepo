@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-
-<?php include "LoginHeader.php"; ?>
-<?php include "Sidebar.php"; ?>
-
-
-<?php 
+<?php
+session_start();
 
 $uname="admin";
 $password="admin@123";
 
 if (isset($_SESSION['uname'])) 
 {
-
+	include "LoginHeader.php";
+	include "Sidebar.php"; 
 	echo "<h1> Welcome ".$_SESSION['uname']."</h2>";
 }
 else
@@ -32,6 +24,3 @@ else
 	}
 }
 ?>
-
-</body>
-</html>
